@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#76FF03</color>
+    <color name="colorPrimaryDark">#FE5F55</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTransparent">#80B2EBF2</color>
+    <color name="colorTransparentOutline">#804DD0E1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whitetransu">#25FFFFFF</color>
+    <color name="whitetransuhalf">#99FFFFFF</color>
+    <color name="blueGrey">#4F6367</color>
+    <color name="teksti">#98DAFC</color>
+    <color name="beige">#F5F5DC</color>
+    <color name="tausta">#FE5F55</color>
+    <color name="vaaleasi">#B8D8D8</color>
+    <color name="vaaleapuna">#FFCCCC</color>
+    <color name="columbiablue">#B8D8D8</color>
+    <color name="weldonblue">#7A9E9F</color>
+    <color name="greya">#424242</color>
+    <color name="lightgrey">#708090</color>
+    <color name="slateblue">#37474F</color>
+    <color name="stormcloud">#4F6367</color>
+    <color name="black">#000000</color>
+</resources>

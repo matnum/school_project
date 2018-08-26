@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loadinganimationProgrssBar"
+        tools:context=".MapsActivity" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/white_border"
+        android:id="@+id/relLayout1">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ic_magnify"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_magnify"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ic_magnify"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/input_search"
+            android:singleLine="true"
+            android:background="@null"
+            android:hint="Enter Address, City or Zip Code"
+            android:imeOptions="actionSearch"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/ic_aurora"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/relLayout1"
+        android:layout_marginStart="60dp"
+        android:layout_toEndOf="@+id/textViewRoad"
+        android:onClick="showAuroraData"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_aurora" />
+
+    <ImageView
+        android:id="@+id/ic_gps"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/relLayout1"
+        android:layout_marginEnd="60dp"
+        android:layout_toStartOf="@+id/ic_settingsi"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_gps" />
+
+    <ImageView
+        android:id="@+id/ic_roadata"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/relLayout1"
+        android:layout_below="@+id/relLayout1"
+        android:layout_marginStart="15dp"
+        android:onClick="showRoadData"
+        android:src="@drawable/ic_roaddata" />
+
+    <ImageView
+        android:id="@+id/ic_settingsi"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/relLayout1"
+        android:layout_below="@+id/relLayout1"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/ic_settingi" />
+
+    <ProgressBar
+        android:id="@+id/loadinganimationProgrssBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewRoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ic_roadata"
+        android:layout_alignStart="@+id/ic_roadata"
+        android:layout_below="@+id/ic_roadata"
+        android:fontFamily="@font/carsond"
+        android:paddingLeft="8dp"
+        android:text="Road"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewAurora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewRoad"
+        android:layout_alignStart="@+id/ic_aurora"
+        android:layout_below="@+id/ic_aurora"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/carsond"
+        android:paddingLeft="4dp"
+        android:text="Aurora"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ic_gps"
+        android:layout_below="@+id/ic_gps"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/carsond"
+        android:text="GPS"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ic_settingsi"
+        android:layout_below="@+id/ic_settingsi"
+        android:fontFamily="@font/carsond"
+        android:text="Settings"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
